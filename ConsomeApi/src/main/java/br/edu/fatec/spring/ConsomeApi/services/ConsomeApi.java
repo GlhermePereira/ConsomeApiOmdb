@@ -13,7 +13,7 @@ public class ConsomeApi {
     HttpClient cliente = HttpClient.newHttpClient();
     // Client, Request, Response.
     HttpRequest request = HttpRequest.newBuilder()
-            .uri(URI.create("https://www.omdbapi.com/?t=the+flash&apikey=212353bf"))
+            .uri(URI.create("https://www.omdbapi.com/?t=the+flash&apikey="))
             .build();
     HttpResponse<String> response = cliente
     		.send(request, HttpResponse.BodyHandlers.ofString());
